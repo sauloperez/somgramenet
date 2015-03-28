@@ -29,6 +29,12 @@ config = {
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
+        },
+        aws: {
+          accessKeyId: process.env.AWS_ACCESS_ID,
+          secretAccessKey: process.env.AWS_ACCESS_SECRET,
+          bucket: process.env.AWS_BUCKET_NAME,
+          region: process.env.AWS_BUCKET_REGION
         }
     },
 
@@ -68,6 +74,12 @@ config = {
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
+        },
+        aws: {
+          accessKeyId: process.env.AWS_ACCESS_ID,
+          secretAccessKey: process.env.AWS_ACCESS_SECRET,
+          bucket: process.env.AWS_BUCKET_NAME,
+          region: process.env.AWS_BUCKET_REGION
         }
     },
 
