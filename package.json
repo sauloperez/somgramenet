@@ -32,6 +32,7 @@
   },
   "engineStrict": true,
   "dependencies": {
+    "aws-sdk": "^2.1.20",
     "bcryptjs": "2.0.2",
     "bluebird": "2.4.2",
     "body-parser": "1.10.0",
@@ -59,6 +60,7 @@
     "passport-http-bearer": "1.0.1",
     "passport-oauth2-client-password": "0.1.2",
     "path-match": "1.2.2",
+    "pg": "latest",
     "request": "2.51.0",
     "rss": "1.0.0",
     "semver": "4.1.0",
@@ -66,11 +68,8 @@
     "sqlite3": "3.0.5",
     "unidecode": "0.1.3",
     "validator": "3.28.0",
-    "when": "3.2.3",
-    "xml": "0.0.12",
-    "pg": "latest",
-    "ghost-s3": "0.0.0",
-    "aws-sdk": "2.0.9"
+    "when": "^3.7.2",
+    "xml": "0.0.12"
   },
   "optionalDependencies": {
     "mysql": "2.1.1",
