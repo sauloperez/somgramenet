@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://www.somgramenet.cat',
-        mail: {},
+        mail: {
+          transport: 'SMTP',
+          options: {
+            service: 'Mailgun',
+            auth: {
+              user: process.env.MAIL_USER,
+              pass: process.env.MAIL_PASSWORD
+            }
+          }
+        },
         database: {
             client: 'postgres',
             connection: {
@@ -44,21 +53,16 @@ config = {
         // Change this to your Ghost blogs published URL.
         url: 'http://localhost:2368',
 
-        // Example mail config
-        // Visit http://support.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
-
+        mail: {
+          transport: 'SMTP',
+          options: {
+            service: 'Mailgun',
+            auth: {
+              user: process.env.MAIL_USER,
+              pass: process.env.MAIL_PASSWORD
+            }
+          }
+        },
         database: {
             client: 'sqlite3',
             connection: {
