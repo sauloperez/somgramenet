@@ -24,6 +24,7 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "npm cache clean",
+    "postinstall": "npm install aws-sdk when --save",
     "start": "node index",
     "test": "./node_modules/.bin/grunt validate --verbose"
   },
