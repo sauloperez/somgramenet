@@ -23,6 +23,7 @@
   ],
   "main": "./core/index",
   "scripts": {
+    "preinstall": "npm install -g aws-sdk when",
     "start": "node index",
     "test": "./node_modules/.bin/grunt validate --verbose"
   },
@@ -33,7 +34,7 @@
   },
   "engineStrict": true,
   "dependencies": {
-    "aws-sdk": "2.0.5",
+    "aws-sdk": "2.1.20",
     "bcryptjs": "2.0.2",
     "bluebird": "2.4.2",
     "body-parser": "1.10.0",
