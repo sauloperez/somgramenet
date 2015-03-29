@@ -29,11 +29,11 @@
   "engines": {
     "node": "~0.10.0 || ~0.12.0",
     "iojs": "~1.2.0",
-    "npm": "2.2.x"
+    "npm": "2.7.4"
   },
   "engineStrict": true,
   "dependencies": {
-    "aws-sdk": "2.1.20",
+    "aws-sdk": "2.0.5",
     "bcryptjs": "2.0.2",
     "bluebird": "2.4.2",
     "body-parser": "1.10.0",
