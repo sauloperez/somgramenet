@@ -949,6 +949,12 @@ body:not(.post-template) .post-title {
     line-height: 1.7em;
 }
 
+.post-excerpt img.post-image {
+    width: 200px;
+    float: left;
+    margin-right: 1.5rem;
+}
+
 .read-more {
     text-decoration: none;
 }
